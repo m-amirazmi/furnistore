@@ -1,0 +1,51 @@
+[
+	{
+		"id": "1",
+		"countryCode": "MY",
+		"currencyCode": "MYR",
+		"symbol": "RM",
+		"rate": 1
+	},
+	{
+		"id": "2",
+		"countryCode": "ID",
+		"currencyCode": "IDR",
+		"symbol": "Rp",
+		"rate": 3445.56
+	},
+	{
+		"id": "3",
+		"countryCode": "SG",
+		"currencyCode": "SGD",
+		"symbol": "S$",
+		"rate": 0.32
+	},
+	{
+		"id": "4",
+		"countryCode": "TH",
+		"currencyCode": "THB",
+		"symbol": "฿",
+		"rate": 7.87
+	},
+	{
+		"id": "5",
+		"countryCode": "BR",
+		"currencyCode": "BND",
+		"symbol": "B$",
+		"rate": 0.32
+	},
+	{
+		"id": "6",
+		"countryCode": "GB",
+		"currencyCode": "GBP",
+		"symbol": "£",
+		"rate": 0.18
+	},
+	{
+		"id": "7",
+		"countryCode": "US",
+		"currencyCode": "USD",
+		"symbol": "$",
+		"rate": 0.24
+	}
+]

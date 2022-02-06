@@ -1,0 +1,47 @@
+@import "_colors";
+@import "_fonts";
+@import "../../../node_modules/bootstrap/scss/_functions";
+@import "../../../node_modules/bootstrap/scss/_variables";
+@import "../../../node_modules/bootstrap/scss/_utilities";
+
+$custom-theme-colors: (
+	"white": $white,
+	"black": $black,
+	"yellow": $yellow,
+	"orange": $orange,
+	"accent-1": $accent-1,
+	"accent-2": $accent-2,
+	"accent-3": $accent-3,
+	"accent-4": $accent-4,
+	"accent-5": $accent-5,
+	"accent-3-light": $accent-3-light,
+);
+
+$dropdown-link-color: $gray-900;
+$dropdown-link-hover-color: shade-color($gray-900, 10%);
+$dropdown-link-hover-bg: $accent-3-light;
+
+$utilities: map-merge(
+	$utilities,
+	(
+		"color": (
+			property: color,
+			class: text,
+			values: map-merge($theme-colors, $custom-theme-colors),
+		),
+		"background-color": (
+			property: background-color,
+			class: bg,
+			values: map-merge($theme-colors, $custom-theme-colors),
+		),
+		"border-color": (
+			property: border-color,
+			class: border,
+			values: map-merge($theme-colors, $custom-theme-colors),
+		),
+	)
+);
+
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";

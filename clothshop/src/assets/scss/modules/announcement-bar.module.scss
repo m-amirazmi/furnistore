@@ -1,0 +1,40 @@
+@import "../colors";
+
+.announcement {
+	color: $white;
+	text-decoration: none;
+	font-weight: 400;
+	animation-duration: 3s;
+	animation-name: inviToVisibleToInvi;
+	&:hover {
+		color: $accent-3-light;
+	}
+}
+
+.link {
+	color: $white;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	&:hover {
+		color: $accent-3-light;
+	}
+}
+
+@keyframes inviToVisibleToInvi {
+	from {
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 1;
+	}
+
+	60% {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}

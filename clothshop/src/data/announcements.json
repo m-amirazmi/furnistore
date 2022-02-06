@@ -1,0 +1,17 @@
+[
+	{
+		"id": "1",
+		"text": "Extended New Year Sale! - 30% off",
+		"link": "/shop?promocode=newyear"
+	},
+	{
+		"id": "2",
+		"text": "Chinese New Year Off - 20% off",
+		"link": "/shop?promocode=cny"
+	},
+	{
+		"id": "3",
+		"text": "New Store Opening Offer - 10% off",
+		"link": "/shop?promocode=newstore"
+	}
+]
