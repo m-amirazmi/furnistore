@@ -55,7 +55,7 @@ const TopNav: React.FunctionComponent = () => {
 
 			{openMenu && (
 				<div className={`${styles.menuitemsIn} ${styles.menuitems}`}>
-					<Container className="p-3 h-100" style={{ marginTop: "-50px" }}>
+					<Container className="p-3 h-100">
 						<div className="d-flex flex-column align-items-center justify-content-center h-100">
 							{menu.topnav.map((m) => (
 								<Link
