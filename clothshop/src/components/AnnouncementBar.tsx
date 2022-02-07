@@ -9,7 +9,7 @@ import { ICurrency } from "../utils/interfaces";
 import { useCurrency } from "../hooks/useCurrency";
 
 const AnnouncementBar: React.FunctionComponent = () => {
-	const { currency, loading, changeCurrency } = useCurrency();
+	const { currency, changeCurrency } = useCurrency();
 
 	const [count, setCount] = useState(1);
 	const [openCurrency, setOpenCurrency] = useState(false);
@@ -31,8 +31,10 @@ const AnnouncementBar: React.FunctionComponent = () => {
 		<div className="bg-accent-3 text-white py-2" style={{ fontSize: "14px", fontWeight: "300" }}>
 			<Container>
 				<Row>
-					<Col md="4">Call: +60 1119821105</Col>
-					<Col md="4" className="text-center">
+					<Col className="d-none d-md-block" md="4">
+						Call: +60 1119821105
+					</Col>
+					<Col sm="6" md="4" className="text-center">
 						{announcements.map(
 							(item) =>
 								+item.id === count && (
@@ -42,7 +44,7 @@ const AnnouncementBar: React.FunctionComponent = () => {
 								)
 						)}
 					</Col>
-					<Col md="4" className="">
+					<Col className="d-none d-md-block" md="4">
 						<div className="d-flex justify-content-end">
 							<Link to="/signin" className={styles.link}>
 								<FiLogIn />
@@ -51,7 +53,7 @@ const AnnouncementBar: React.FunctionComponent = () => {
 							<span className="mx-2">|</span>
 							<div className={styles.link}>
 								<Dropdown isOpen={openCurrency} toggle={() => setOpenCurrency(!openCurrency)}>
-									<DropdownToggle data-toggle="dropdown" tag="span" style={{ cursor: "pointer" }}>
+									<DropdownToggle data-toggle="dropdown" tag="span" style={{ cursor: "pointer" }} className="d-flex align-items-center">
 										<img width={20} src={`https://purecatamphetamine.github.io/country-flag-icons/3x2/${currency.countryCode}.svg`} />
 										<span className="ms-2">
 											{currency.currencyCode}({currency.symbol})

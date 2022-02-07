@@ -11,3 +11,8 @@ export interface ICurrencyState {
 	error: string;
 	currency: ICurrency;
 }
+
+export interface ICurrencySelectionProps {
+	color: string;
+	resetState: () => void;
+}

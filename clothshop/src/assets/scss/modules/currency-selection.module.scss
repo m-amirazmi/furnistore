@@ -1,0 +1,21 @@
+@import "../colors";
+.linkWhite {
+	color: $white;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	transition: all 0.25s ease-in-out;
+	&:hover {
+		color: $accent-3-light;
+	}
+}
+
+.linkBlack {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	transition: all 0.25s ease-in-out;
+	&:hover {
+		color: $accent-3;
+	}
+}

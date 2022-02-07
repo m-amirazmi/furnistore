@@ -1,0 +1,34 @@
+{
+	"topnav": [
+		{
+			"id": "1",
+			"name": "Home",
+			"pathname": "/",
+			"search": ""
+		},
+		{
+			"id": "2",
+			"name": "New",
+			"pathname": "/shop",
+			"search": "?filter=new"
+		},
+		{
+			"id": "3",
+			"name": "Shop",
+			"pathname": "/shop",
+			"search": ""
+		},
+		{
+			"id": "4",
+			"name": "About",
+			"pathname": "/about",
+			"search": ""
+		},
+		{
+			"id": "5",
+			"name": "Contact",
+			"pathname": "/contact",
+			"search": ""
+		}
+	]
+}

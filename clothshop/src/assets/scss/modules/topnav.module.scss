@@ -1,0 +1,84 @@
+@import "../colors";
+.link {
+	text-decoration: none;
+	color: $black;
+	transition: all 0.25s ease-in-out;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+
+	&:hover {
+		color: $accent-3;
+	}
+}
+
+.active {
+	color: $accent-3;
+}
+
+.border {
+	height: 2px;
+	width: 20px;
+	margin: 12px 0px;
+	border-radius: 50px;
+	background-color: $accent-3;
+}
+
+.drawer {
+	animation-duration: 0.2s;
+	animation-name: open;
+}
+
+.menuitems {
+	height: calc(100vh - 90px);
+	width: 100vw;
+	position: absolute;
+	top: 10.5%;
+	background-color: $accent-3-light;
+}
+
+.menuitemsIn {
+	animation: slideIn 0.5s 1 linear forwards;
+}
+
+.menuitemsOut {
+	opacity: 0;
+	transform: translate(-100%, 0%);
+	animation: slideOut 0.5s 1 linear forwards;
+}
+
+@keyframes open {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes slideIn {
+	0% {
+		transform: translate(-100%, 0%);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(0%, 0%);
+		opacity: 1;
+	}
+}
+
+@keyframes slideOut {
+	0% {
+		opacity: 1;
+		transform: translate(0%, 0%);
+	}
+	99% {
+		transform: translate(-99%, 0%);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(-100%, 0%);
+		opacity: 0;
+		display: none;
+	}
+}
